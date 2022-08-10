@@ -1,0 +1,30 @@
+.header{
+    background-color: var(--backgraund-color);
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 96px;
+}
+.header__nav{
+    display: flex;
+    align-items: center; 
+    padding-top: 40px;
+    padding-bottom: 38px;
+}
+
+.header__list{
+    display: flex;
+
+}
+
+.header__item:not(:last-child){
+  margin-right: 60px;
+    
+}
+
+.logo{
+    fill: white;
+}
