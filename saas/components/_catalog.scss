@@ -1,0 +1,95 @@
+
+.catalog{
+    padding-bottom: 140px;
+}
+.catalog__title{
+    font-family: 'Liberation Serif';
+    font-size: 64px;
+    line-height: 1.25;
+    text-align: center;
+    font-weight: 400;
+    max-width: 680px;
+    margin: 50px auto 0;
+}
+
+.catalog__slogan{
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 82px;
+    
+}
+
+.catalog-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+}
+
+.catalog-list__title {
+    font-family: 'Liberation Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.46;
+    text-align: center;
+    margin-bottom: 16px;
+
+}
+
+.catalog-list__img{
+    display: block;
+    max-width: 381px;
+    max-height: 426px;
+    margin-bottom: 19px;
+    
+}
+
+.catalog-list__text{
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog-button{
+    display: inline-block;
+    background-color: var(--primery-text-color);
+    color: var(--title-color);
+    padding: 18px 48px;
+    margin-top: 27px;
+    margin-left: 100px;
+}
+
+// .catalog-list__mark{
+//     position: absolute;
+    
+// }
+// .catalog__item{
+//     position: relative;
+// }
+
+.catlog__mark{
+    color: white;
+    position: absolute;
+    background-color:black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 35px 21px;
+
+        font-size: 12px;
+        line-height: 14px;
+        /* or 117% */
+    
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+}

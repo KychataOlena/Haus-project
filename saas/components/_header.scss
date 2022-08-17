@@ -1,5 +1,5 @@
 .header{
-    background-color: var(--backgraund-color);
+background-color: var(--backgraund-color-hero);
 }
 
 .header__inner{
@@ -26,5 +26,14 @@
 }
 
 .logo{
-    fill: white;
+    fill: var(--title-color);
+}
+
+.header__link{
+    color: var(--title-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }

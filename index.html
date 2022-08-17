@@ -18,9 +18,9 @@
             <div class="header__inner">
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item"><a href="">shop</a></li>
-                        <li class="header__item"><a href="">membership</a></li>
-                        <li class="header__item"><a href="">our story</a></li>
+                        <li class="header__item"><a class="header__link" href="">shop</a></li>
+                        <li class="header__item"><a class="header__link" href="">membership</a></li>
+                        <li class="header__item"><a class="header__link" href="">our story</a></li>
                     </ul>
                 </nav>
                 <a class="logo" href="#">
@@ -28,9 +28,9 @@
                 </a>
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item"><a href="">Newsletter</a></li>
-                        <li class="header__item"><a href="">Account</a></li>
-                        <li class="header__item"><a href="">Cart (0)</a></li>
+                        <li class="header__item"><a class="header__link" href="">Newsletter</a></li>
+                        <li class="header__item"><a class="header__link" href="">Account</a></li>
+                        <li class="header__item"><a class="header__link" href="">Cart (0)</a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,9 +38,9 @@
     </header>
     <main>
         <section class="hero">
-            <div class="container">
-                <h1>Alcohol for the modern drinker</h1>
-                <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just pour,
+            <div class="hero__inner container">
+                <h1 class="hero__title">Alcohol for the modern drinker</h1>
+                <p class="hero__text">Light and refreshing flavors made with real, clean ingredients you can feel good about. Just pour,
                     sip, and enjoy.</p>
                 <button type="button">Shop ALL</button>
             </div>
@@ -49,21 +49,34 @@
 
         <section class="reviews">
             <div class="container">
-                <h2>reviews</h2>
+                <h2 class="is-hidden">reviews</h2>
                 <div class="reviews__inner">
                     <ul class="reviews__list">
                         <li class="reviews__item">
-                            <p>"What makes Haus so special is its incredible flavors."</p>
-                            <img src="" alt="Food&Wine">
+                            <p class="reviews__text">"What makes Haus so special is its incredible flavors."</p>
+                            <img
+                            srcset="./img/Rectangle1x.png 1x,
+                                    ./img/Rectangle@2x.png 2x" 
+                            src="./img/Rectangle1x.png" alt="Food&Wine" 
+                            width="300px">
+                            
                         </li>
                         <li class="reviews__item">
-                            <p>“For the wine or cocktail lover who’s tried it all and wants something new and
+                            <p class="reviews__text">“For the wine or cocktail lover who’s tried it all and wants something new and
                                 refreshing.”</p>
-                            <img src="" alt="The New York Time">
+                            <img 
+                            srcset="./img/NYTimes@1x.png 1x,
+                                    ./img/NYTimes@2x.png 2x"
+                            src="./img/NYTimes@1x.png" alt="The New York Time"
+                            width="300px">
                         </li>
                         <li class="reviews__item">
-                            <p>“Cleaner, responsibly sourced, and lower in alcohol.”</p>
-                            <img src="" alt="Bon Appetit">
+                            <p class="reviews__text">“Cleaner, responsibly sourced, and lower in alcohol.”</p>
+                            <img
+                            srcset="./img/bon-appetit1x.png 1x,
+                                    ./img/bon-appetit@2x.png 2x" 
+                            src="./img/bon-appetit1x.png" alt="Bon Appetit"
+                            width="300px">
                         </li>
                     </ul>
                 </div>
@@ -73,32 +86,52 @@
 
         <section class="catalog">
             <div class="container">
-                <h2>Made with natural ingredients, nothing fake</h2>
-                <p>Shop All Flavors</p>
+                <h2 class="catalog__title">Made with natural ingredients, nothing fake</h2>
+                <p class="catalog__slogan">Shop All Flavors</p>
                 <div class="catalog__inner">
-                    <ul class="catalog__list">
+                    <ul class="catalog-list">
                         <li class="catalog__item">
-                            <img src="" alt="Food&Wine">
-                            <h3>The Sampler Kit</h3>
-                            <p>Try a variety of Haus flavors with our customizable four-bottle kit. Each bottle serves
-                                2-3 drinks.</p>
-                            <button type="button">Shop ALL</button>
-
-                        </li>
-                        <li class="catalog__item">
-                            <img src="" alt="Food&Wine">
-                            <h3>Grapefruit Jalapeño</h3>
-                            <p>Light and refreshing, this aperitif is a bright blend of citrus with a subtle kick of
+                          
+                            <picture class="catalog-list__img">
+                                <source media="(min-width: 1200px)" srcset="./img/four-bottle@1x.jpg 1x,
+                                     ./img/four-bottle@2x.jpg 2x">
+                                <img src="./img/four-bottle@1x.jpg" alt="cocktail">
+                            </picture>
+                            <h3 class="catalog-list__title">Grapefruit Jalapeño</h3>
+                            <p class="catalog-list__text">Light and refreshing, this aperitif is a bright blend of citrus with a subtle kick of
                                 fresh jalapeño.</p>
-                            <button type="button">Shop ALL</button>
+                            <button class="button catalog-button" type="button">Shop Now</button>
                         </li>
                         <li class="catalog__item">
-                            <img src="" alt="Food&Wine">
-                            <h3>Citrus Flower</h3>
-                            <p>A fresh Californian take on the apéritif. Made with crisp lemon and subtle elderflower.
-                            </p>
-                            <button type="button">Shop ALL</button>
+                            <span class="catlog__mark">best seller</span>
+                            <!-- <img class="catalog-list__mark" srcset="./img/Frame@1x-min.jpg 1x,
+                          ./img/Frame@2x-min.jpg 2x"
+                           src="./img/Frame@1x-min.jpg"
+                            alt="Food&Wine" width="100px"> -->
+                            <picture class="catalog-list__img">
+                                <source media="(min-width: 1200px)" 
+                                srcset="./img/green-bottle@1x.jpg 1x,
+                                ./img/green-bottle@2x.jpg2x">
+                                <img src="./img/green-bottle@1x.jpg" 
+                                alt="cocktail">
+                            </picture>
+                            <h3 class="catalog-list__title">Grapefruit Jalapeño</h3>
+                            <p class="catalog-list__text">Light and refreshing, this aperitif is a bright blend of citrus with a subtle kick of
+                                fresh jalapeño.</p>
+                            <button class="button catalog-button" type="button">Shop Now</button>
                         </li>
+                        <li class="catalog__item">
+                            <picture class="catalog-list__img">
+                                <source media="(min-width: 1200px)" srcset="./img/gold-bottle@1x.jpg 1x,
+                                ./img/gold-bottle@2x.jpg 2x">
+                                <img src="./img/gold-bottle@1x.jpg" alt="cocktail">
+                            </picture>
+                            <h3 class="catalog-list__title">Grapefruit Jalapeño</h3>
+                            <p class="catalog-list__text">Light and refreshing, this aperitif is a bright blend of citrus with a subtle kick of
+                                fresh jalapeño.</p>
+                            <button class="button catalog-button" type="button">Shop Now</button>
+                        </li>
+              
                     </ul>
                 </div>
 

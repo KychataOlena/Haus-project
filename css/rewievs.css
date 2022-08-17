@@ -1,0 +1,17 @@
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews__text {
+  color: inherit;
+  font-size: 18px;
+  line-height: 1.77;
+  text-align: center;
+  max-width: 288px;
+}/*# sourceMappingURL=rewievs.css.map */
