@@ -8,77 +8,15 @@ body{
     border: none;
     cursor: pointer;
 
-
-
-    // color: var(--accent-color);
-    // background-color: var(--bg-primary-color);
-    // transition: background-color var(--transition-duration-function);
-
-    // &:hover,
-    // &:focus {
-    //     background-color: var(--btn-hover-bg-color);
-    // }
 }
 
-// .button__product{
-//     display: inline-flex;
-//         text-align: center;
-//     padding: 15px 26px;
-//     min-width: 107px;
-//     color: white;
-//     background-color: #D41443;
-//     border-radius: 20px;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 18px;
-// }
-// .button__made {
-
-//     padding: 15px 21px;
-//     font-size: 14px;
-//     line-height: 18px;
-//     color: #D41443;
-//     background-color: white;
-//     border-radius: 20px;
-    
-// }
-
-// .button__product--tablet {
-//     display: inline-block;
-//     padding: 9px 15px;
-//     font-weight: 400;
-//     font-size: 8px;
-//     line-height: 10px;
-  
-
-// }
-
-// .icon{
-//     fill: white;
-// }
-
-// .button__made--tablet {
-//     display: inline-block;
-//     padding: 9px 13px;
-//     font-weight: 400;
-//     font-size: 8px;
-//     line-height: 10px;
-//     color: #D41443;
-//     background-color: white;
-//     border-radius: 20px;
-
-
-// }
-
-// .button__read {
-//     display: inline-block;
-//     padding: 13.5px 37px;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 21px;
-//     color: #D41443;
-//     background-color: white;
-//     border-radius: 20px;
-
-
-// }
+.button-hero{
+    padding: 20px 52px;
+    background-color: transparent;
+    border: 1px solid var(--title-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}

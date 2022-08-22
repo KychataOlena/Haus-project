@@ -61,10 +61,18 @@ section {
   background-color: var(--backgraund-color);
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }
 
 body {
@@ -76,6 +84,17 @@ body {
   text-align: center;
   border: none;
   cursor: pointer;
+}
+
+.button-hero {
+  padding: 20px 52px;
+  background-color: transparent;
+  border: 1px solid var(--title-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .container {
@@ -140,14 +159,27 @@ body {
 
 .hero {
   background-color: var(--backgraund-color-hero);
+  padding-top: 0;
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--backgraund-color-hero);
 }
 
 .hero__inner {
   padding-top: 180px;
   padding-bottom: 100px;
+  margin-left: 60px;
 }
 
 .hero__title {
+  margin-bottom: 34px;
   color: var(--title-color);
   font-family: Liberation Serif;
   font-style: normal;
@@ -158,6 +190,7 @@ body {
 }
 
 .hero__text {
+  margin-bottom: 46px;
   color: var(--title-color);
   max-width: 572px;
   font-size: 18px;
@@ -183,7 +216,7 @@ body {
 }
 
 .catalog {
-  padding-bottom: 140px;
+  padding-bottom: 64px;
 }
 
 .catalog__title {
@@ -258,9 +291,14 @@ body {
   margin-left: 100px;
 }
 
+.catalog__item {
+  position: relative;
+}
+
 .catlog__mark {
   color: white;
   position: absolute;
+  left: 70%;
   background-color: black;
   width: 100px;
   height: 100px;
@@ -269,8 +307,133 @@ body {
   padding: 35px 21px;
   font-size: 12px;
   line-height: 14px;
-  /* or 117% */
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.aperativ-img {
+  padding: 60px;
+}
+
+.about-flover__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 95px;
+}
+
+.about-flover__title {
+  font-family: "Liberation Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 1.5;
+}
+
+.about-flover__text {
+  font-size: 18px;
+  line-height: 1.77;
+  max-width: 548px;
+}
+
+.description__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.description__img {
+  padding: 60px 60px 50px 54px;
+}
+
+.description__list {
+  padding: 112px 0 50px 60px;
+}
+
+.description__title {
+  font-family: "Liberation Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.46;
+  margin-bottom: 19px;
+}
+
+.description__text {
+  font-size: 18px;
+  line-height: 1.77;
+  max-width: 380px;
+}
+
+.response {
+  background-color: black;
+}
+
+.response__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.response__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 95px;
+  padding-bottom: 82px;
+}
+
+.response__text {
+  max-width: 318px;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 17px;
+  color: #FFFFFF;
+}
+
+.response__text--name {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 9px;
+}
+
+.response__text--script {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: capitalize;
+  color: #8A8A8A;
 }/*# sourceMappingURL=main.css.map */

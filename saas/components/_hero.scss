@@ -1,13 +1,21 @@
 .hero{
     background-color: var(--backgraund-color-hero);
+    padding-top: 0;
     // max-width: 1440px;
     
+}
+.hero__container{
+    display: flex;
+    align-items: center;
+    background-color: var(--backgraund-color-hero);
 }
 .hero__inner{
   padding-top: 180px;
   padding-bottom: 100px;
+  margin-left: 60px;
 }
 .hero__title{
+    margin-bottom: 34px;
     color: var(--title-color);
     font-family: Liberation Serif;
     font-style: normal;
@@ -18,9 +26,9 @@
 
 }
 .hero__text {
+    margin-bottom: 46px;
     color: var(--title-color);
     max-width: 572px;
-
     font-size: 18px;
     line-height: 1.77;
 }

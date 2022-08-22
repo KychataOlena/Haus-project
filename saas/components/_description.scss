@@ -1,0 +1,30 @@
+// .description__list{
+
+// }
+.description__inner {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.description__img {
+    padding: 60px 60px 50px 54px;
+}
+
+.description__list {
+    padding: 112px 0 50px 60px;
+}
+
+.description__title {
+    font-family: 'Liberation Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.46;
+    margin-bottom: 19px;
+}
+
+.description__text {
+    font-size: 18px;
+    line-height: 1.77;
+    max-width: 380px;
+}
