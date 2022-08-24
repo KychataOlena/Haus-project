@@ -1,0 +1,40 @@
+
+.flowers__inner{
+    display: flex;
+    padding: 60px 60px;
+}
+
+.flowers__img{
+    max-width: 576px;
+    width: 100%;
+}
+
+.flowers__paragraph{
+    margin-left: 108px;
+       
+}
+.flowers__title{
+
+    max-width: 630px;
+    line-height: 1.25;
+    margin-bottom: 150px;
+    font-size: 62px;
+}
+.flowers__text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+.flowers__text--bottom{
+    margin-bottom: 35px;
+}
+.flowers__text--sub{
+
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+      
+}

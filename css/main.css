@@ -219,13 +219,16 @@ body {
   padding-bottom: 64px;
 }
 
-.catalog__title {
+.title {
   font-family: "Liberation Serif";
   font-size: 64px;
   line-height: 1.25;
   text-align: center;
   font-weight: 400;
   max-width: 680px;
+}
+
+.catalog__title {
   margin: 50px auto 0;
 }
 
@@ -388,9 +391,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -405,7 +408,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 95px;
-  padding-bottom: 82px;
+  padding-bottom: 50px;
 }
 
 .response__text {
@@ -436,4 +439,46 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #8A8A8A;
+}
+
+.flowers__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 60px;
+}
+
+.flowers__img {
+  max-width: 576px;
+  width: 100%;
+}
+
+.flowers__paragraph {
+  margin-left: 108px;
+}
+
+.flowers__title {
+  max-width: 630px;
+  line-height: 1.25;
+  margin-bottom: 150px;
+  font-size: 62px;
+}
+
+.flowers__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.flowers__text--bottom {
+  margin-bottom: 35px;
+}
+
+.flowers__text--sub {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
